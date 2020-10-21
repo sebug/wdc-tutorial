@@ -1,0 +1,19 @@
+{
+  "name": "wdc-tutorial",
+  "version": "1.0.0",
+  "description": "Tests the web data connector",
+  "main": "earthquakeWDC.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebug/wdc-tutorial.git"
+  },
+  "author": "Sebastian Gfeller",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/sebug/wdc-tutorial/issues"
+  },
+  "homepage": "https://github.com/sebug/wdc-tutorial#readme"
+}
