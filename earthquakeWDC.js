@@ -1,6 +1,19 @@
 (function () {
     var myConnector = tableau.makeConnector();
 
+    myConnector.init = function (initCallback) {
+	tableau.authType = tableau.authTypeEnum.custom;
+
+	if (tableau.phase === tableau.phaseEnum.authPhase) {
+	    const loginForm = document.querySelector('form.login');
+	    loginForm.style.display = 'block';
+	    const getData = document.querySelector('.get-data');
+	    getData.style.display = 'none';
+	}
+
+	initCallback();
+    };
+
     myConnector.getSchema = function (schemaCallback) {
 	var cols = [{
             id: "id",

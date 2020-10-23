@@ -13,8 +13,20 @@
     <script src="earthquakeWDC.js" type="text/javascript"></script>
 </head>
 
-<body>
-    <div class="container container-table">
+  <body>
+    <form class="login" style="display: none">
+  <div class="form-group">
+    <label for="username">User name</label>
+    <input class="form-control" id="username">
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input type="password" class="form-control" id="password">
+  </div>
+  <button type="submit" class="btn btn-primary">Login</button>
+</form>
+
+    <div class="container container-table get-data">
         <div class="row vertical-center-row">
             <div class="text-center col-md-4 col-md-offset-4">
                 <button type="button" id="submitButton" class="btn btn-success" style="margin: 10px;">Get Earthquake Data!</button>
